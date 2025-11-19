@@ -11,6 +11,9 @@ import septemberImg from "../assets/september.png";
 import octoberImg from "../assets/october.png";
 import novemberImg from "../assets/november.png";
 import julyImg from "../assets/july.png";
+import balalarImg from "../assets/balalar.png";
+
+
 
 const Projects = () => {
   const projects = [
@@ -66,14 +69,14 @@ const Projects = () => {
       title: "Июнь — Помощь онкобольнице UMC",
       description:
         "Передали в онкоотделение подгузники и расходники для малышей.",
-      image: juneImg,
+      image: balalarImg,
       link: "https://rchll-16.github.io/science-lesson/main.html",
-      tech: ["Онко-дети"],
+      tech: ["Малыши"],
     },
     {
-      title: "Июль — Новый дом для семьи из Есиля",
+      title: "Июль - Новый дом для семьи из районного центра",
       description:
-        "Переселили семью с детьми и инвалидами из аварийного дома в безопасное жильё и полностью обеспечили всем необходимым для жизни.",
+        "Мы переселили семью с детьми и людьми с инвалидностью из аварийного жилья в безопасный дом и обеспечили их всем необходимым для жизни в тепле, заботе и уверенности.",
       image: julyImg,
       link: "https://rchll-16.github.io/bini-redesign/main.html",
       tech: ["Семья"],
