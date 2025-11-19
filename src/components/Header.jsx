@@ -3,18 +3,17 @@ import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md"
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaInstagram, FaTiktok } from "react-icons/fa"
+import { FaInstagram } from "react-icons/fa"
 
 const navMenu = [
-  { href: "/about", label: "About" },
-  { href: "/skills", label: "Skills" },
-  { href: "/projects", label: "Projects" },
+  { href: "/about", label: "О нас" },
+  { href: "/skills", label: "Наша История" },
+  { href: "/projects", label: "12 месяцев добра" },
 ];
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false); // mobile menu
-  const [sheetOpen, setSheetOpen] = useState(false); // contact sheet
+  const [isOpen, setIsOpen] = useState(false); 
+  const [sheetOpen, setSheetOpen] = useState(false); 
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
@@ -43,7 +42,7 @@ const Header = () => {
             className="text-2xl text-stone-800 hover:text-white transition-colors duration-300"
             style={{ fontFamily: "satoshi-black" }}
           >
-            &lt;Qwerty/&gt;
+            Главная
           </Link>
         </div>
 
@@ -80,7 +79,7 @@ const Header = () => {
             onClick={() => setSheetOpen(true)}
             className="bg-red-300 hover:bg-red-100 transition-all duration-300"
           >
-            Contact Me
+            Контакты
           </Button>
         </div>
 
@@ -129,75 +128,29 @@ const Header = () => {
       <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
         <SheetContent side="right" className="bg-red-50">
           <SheetHeader>
-            <SheetTitle className="text-2xl px-4 mt-10 text-stone-800" style={{fontFamily: 'satoshi-bold'}}>
-              Get in Touch
+            <SheetTitle
+              className="text-2xl px-4 mt-10 text-stone-800"
+              style={{ fontFamily: "satoshi-bold" }}
+            >
+              Свяжитесь с нами
             </SheetTitle>
           </SheetHeader>
-          <div className="px-10 space-y-4" style={{ fontFamily: "satoshi-medium" }}>
-            {/* Email */}
+
+          <div className="px-10 space-y-4 mt-6" style={{ fontFamily: "satoshi-medium" }}>
+            
+            {/* Instagram ONLY */}
             <div className="flex items-center gap-3">
-              <MdEmail className="text-rose-500" size={20} />
-              <span className="text-zinc-700">pantinoplerachelle16@gmail.com</span>
+              <FaInstagram className="text-rose-500" size={24} />
+              <a
+                href="https://www.instagram.com/elite.mnu/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-700 text-lg hover:text-rose-500 transition"
+              >
+                @elite.mnu
+              </a>
             </div>
-          
-            {/* Phone */}
-            <div className="flex items-center gap-3">
-              <MdPhone className="text-rose-500" size={20} />
-              <span className="text-zinc-700">+63 951 490 8319</span>
-            </div>
-          
-            {/* Location */}
-            <div className="flex items-center gap-3">
-              <MdLocationOn className="text-rose-500" size={20} />
-              <span className="text-zinc-700">Rizal, Philippines</span>
-            </div>
-          
-            {/* Social Links */}
-            <div className="pt-4 mt-20 border-t border-rose-200">
-              <h4 className="text-stone-800 mb-3" style={{fontFamily: 'satoshi-bold'}}>Social Media</h4>
-              <div className="flex gap-4">
-                <a
-                  href="https://www.facebook.com/rachellep16"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaFacebookF className="text-rose-500" size={20} />
-                </a>
-                <a
-                  href="https://github.com/rchll-16"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaGithub className="text-rose-500" size={20} />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/pantinople-rachelle-a-165028246/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaLinkedinIn className="text-rose-500" size={20} />
-                </a>
-                <a 
-                  href="https://www.instagram.com/qwrty_rchll/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaInstagram className="text-rose-500" size={20} />
-                </a>
-                <a 
-                  href="https://www.tiktok.com/@qwerty_dev  "
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white shadow hover:bg-rose-100 transition-colors"
-                >
-                  <FaTiktok className="text-rose-500" size={20} />
-                </a>
-              </div>
-            </div>
+
           </div>
         </SheetContent>
       </Sheet>
@@ -205,4 +158,4 @@ const Header = () => {
   );
 };
 
-export default Header
+export default Header;

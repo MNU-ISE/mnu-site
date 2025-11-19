@@ -1,116 +1,139 @@
 import React from "react";
-import flowerShopImg from "../assets/flowershop.png";
-import ecBookstoreImg from "../assets/ecbookstore.jpg";
-import clothingImg from "../assets/clothing.png";
-import school1Img from "../assets/school1.png";
-import school2Img from "../assets/school2.png";
-import intraImg from "../assets/intra.png";
-import scienceImg from "../assets/science.png";
-import biniImg from "../assets/bini.png";
-import { motion } from "framer-motion";
+import decemberImg from "../assets/december.png";
+import januaryImg from "../assets/january.jpg";
+import februaryImg from "../assets/february.png";
+import marchImg from "../assets/march.png";
+import aprilImg from "../assets/april.png";
+import mayImg from "../assets/May.png";
+import juneImg from "../assets/june.png";
+import augustImg from "../assets/august.png";
+import septemberImg from "../assets/september.png";
+import octoberImg from "../assets/october.png";
+import novemberImg from "../assets/november.png";
+import julyImg from "../assets/july.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Flower Shop Website",
+      title: "Декабрь — Новогодняя сказка для детей SOS-деревни",
       description:
-        "The Flower Shop is a static website designed to showcase a variety of flowers available for purchase. This website provides users with an easy-to-navigate interface to explore different flower types, view details, and make inquiries.",
-      image: flowerShopImg,
+        "В декабре мы провели праздничный утренник для детей из SOS-деревни: устроили конкурсы, игры, танцы, пригласили Деда Мороза и сказочных персонажей, дарили подарки и создали атмосферу настоящего новогоднего чуда.",
+      image: decemberImg,
       link: "https://rchll-16.github.io/Flower-Shop/",
-      tech: ["HTML", "CSS", "JavaScript"],
+      tech: ["Дети"],
     },
     {
-      title: "E-Commerce Web App",
+      title: "Январь — Забота о тех, кто делает город чище",
       description:
-        "An E-Commerce bookstore web application where users can browse, search, and purchase books online.  Built with React, Node.js, and MongoDB — providing a smooth, and dynamic shopping experience.",
-      image: ecBookstoreImg,
+        "Угощали горячим чаем и домашней выпечкой уличных работников, которые каждое утро очищают город от снега. Маленький жест — большая благодарность.",
+      image: januaryImg,
       link: "https://github.com/rchll-16/e-commerce",
-      tech: ["JavaScript", "React", "NodeJS", "MongoDB"],
+      tech: ["Рабочие"],
     },
     {
-      title: "Clothing Website (Commision)",
+      title: "Февраль — Помощь собачьему приюту",
       description:
-        "A clean, responsive, and user-friendly clothing site built with HTML and CSS. This static web project showcases a landing page, FAQ section, and styling using custom CSS.",
-      image: clothingImg,
+        "Передали мясо, корм и необходимые продукты волонтёрам, которые ежедневно спасают бездомных животных от голода и холода.",
+      image: februaryImg,
       link: "https://rchll-16.github.io/clothingwebsite/main.html",
-      tech: ["HTML", "CSS"],
+      tech: ["Животные"],
     },
     {
-      title: "School Website 1 (Commision)",
+      title: "Март — Добрые дела в месяц Рамадан",
       description:
-        "A clean, informative, and fully responsive school website crafted with HTML and CSS. Featuring multiple pages—Home, About, Academic Programs, Offers, Contacts—this static site is perfect for informational or portfolio use.",
-      image: school1Img,
+        "Раздавали воду и финики людям, которые не успевали на ифтар. Поддержали тех, кто постился и торопился домой после работы.",
+      image: marchImg,
       link: "https://rchll-16.github.io/school-aaa/",
-      tech: ["HTML", "CSS"],
+      tech: ["Постящиеся"],
     },
     {
-      title: "School Website 2 (Commision)",
+      title: "Апрель — Новый старт для мамы из «Дома мам»",
       description:
-        "A clean, responsive, and informative school website built using HTML and CSS. Ideal for institutional presentation, this static site includes pages for home, about, academic programs, events, and contact details.",
-      image: school2Img,
+        "Организовали мастер-класс и обучили профессии бровиста женщину в сложной жизненной ситуации. Помогли ей сделать первый шаг к самостоятельности.",
+      image: aprilImg,
       link: "https://rchll-16.github.io/school-uep/",
-      tech: ["HTML", "CSS"],
+      tech: ["Мамы"],
     },
     {
-      title: "Intramuros Cultural Website (Commision)",
+      title: "Май — Забота о ветеранах",
       description:
-        "A beautifully designed, static website showcasing the heritage sites of Intramuros using HTML, CSS, and high-quality images. Perfect for both educational presentation and visual storytelling of historical landmarks.",
-      image: intraImg,
+        "В честь 80-летия Победы вручали продуктовые наборы 3 ветеранам ВОВ, выражая им уважение и благодарность.",
+      image: mayImg,
       link: "https://rchll-16.github.io/intramuros-website/",
-      tech: ["HTML", "CSS"],
+      tech: ["Ветераны"],
     },
     {
-      title: "Science Lesson Website (Commision)",
+      title: "Июнь — Помощь онкобольнице UMC",
       description:
-        "A clean, educational website designed to present various science topics using HTML and CSS. Perfect for sharing lesson modules such as the water cycle, biodiversity, pollution, and more in a readable, structured format.",
-      image: scienceImg,
+        "Передали в онкоотделение подгузники и расходники для малышей.",
+      image: juneImg,
       link: "https://rchll-16.github.io/science-lesson/main.html",
-      tech: ["HTML", "CSS"],
+      tech: ["Онко-дети"],
     },
     {
-      title: "Bini Redesign",
+      title: "Июль — Новый дом для семьи из Есиля",
       description:
-        "A clean, modern redesign project for BINI, focusing on visually appealing layout, responsive design, and smooth user experience. Built entirely with HTML, CSS, and JavaScript — no frameworks, just handcrafted code.",
-      image: biniImg,
+        "Переселили семью с детьми и инвалидами из аварийного дома в безопасное жильё и полностью обеспечили всем необходимым для жизни.",
+      image: julyImg,
       link: "https://rchll-16.github.io/bini-redesign/main.html",
-      tech: ["HTML", "CSS", "JavaScript"],
+      tech: ["Семья"],
+    },
+    {
+      title: "Август — Дорога в школу",
+      description:
+        "Собрали рюкзаки и канцелярию для 5 детей из малообеспеченной многодетной семьи в посёлке, где мама является единственным кормильцем, чтобы новый учебный год начался для них с уверенности и радости.",
+      image: augustImg,
+      link: "https://rchll-16.github.io/bini-redesign/main.html",
+      tech: ["Школьники"],
+    },
+    {
+      title: "Сентябрь — Медицинская помощь нуждающимся семьям",
+      description:
+        "Закупили необходимые медикаменты для 6 семей, где мамы-одиночки не имеют возможности оплатить лечение.",
+      image: septemberImg,
+      link: "https://rchll-16.github.io/september-project/",
+      tech: ["Лечение"],
+    },
+    {
+      title: "Октябрь — Посадка деревьев",
+      description:
+        "Высадили 100 саженцев как символ заботы об экологии, жизни и благодарности. Маленькое действие — большой вклад в зелёное будущее и сохранение природы.",
+      image: octoberImg,
+      link: "https://rchll-16.github.io/october-project/",
+      tech: ["Экология"],
+    },
+    {
+      title: "Ноябрь — Тёплая семья",
+      description:
+        "Передали тёплые вещи семьям, которым особенно нужна поддержка в холодный сезон: куртки, обувь, шапки, кофты, спортивные костюмы и другие необходимые зимние вещи.",
+      image: novemberImg,
+      link: "https://rchll-16.github.io/november-project/",
+      tech: ["Зима"],
     },
   ];
 
   return (
     <section className="py-16 px-4 bg-orange-50">
       <div className="max-w-6xl mx-auto text-center">
-        <motion.h2
+        <h2
           className="text-3xl md:text-4xl text-stone-800 mb-6"
           style={{ fontFamily: "satoshi-black" }}
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
         >
-          My Projects
-        </motion.h2>
+          Наши Проекты
+        </h2>
 
-        <motion.p
+        <p
           className="mb-10 text-zinc-600 leading-relaxed max-w-2xl mx-auto text-base"
           style={{ fontFamily: "satoshi-medium" }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Here are some of the projects I've worked on, showcasing my skills in
-          creating functional, visually appealing, and user-friendly websites.
-        </motion.p>
+          Предлагаем вам ознакомиться с проектами, реализованными в этом году, и увидеть, как добрые инициативы могут приносить реальные результаты.
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <motion.div
+            <div
               key={index}
-              className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.03 }}
+              className="bg-white rounded-xl shadow-md overflow-hidden"
             >
               <img
                 src={project.image}
@@ -130,6 +153,7 @@ const Projects = () => {
                 >
                   {project.description}
                 </p>
+
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((t, i) => (
                     <span
@@ -140,17 +164,10 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-rose-300 border-1 border-stone-800 text-stone-800 px-4 py-2 rounded-sm text-sm font-semibold hover:bg-rose-400 transition-colors"
-                  style={{ fontFamily: "satoshi-medium" }}
-                >
-                  View Project
-                </a>
+
+                {/* Кнопка "View Project" удалена */}
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
