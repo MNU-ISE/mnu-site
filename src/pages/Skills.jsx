@@ -23,7 +23,7 @@ const Story = () => {
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <img src={july2Img} alt="Аварийное состояние дома" className="w-full h-80 object-cover" />
               </div>
-              <p className="mt-4 text-rose-600 font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
+              <p className="mt-4 text-black font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
                 Было
               </p>
               <p className="text-zinc-600">Плесень, протекающая крыша, подпорки вместо стен</p>
@@ -31,10 +31,10 @@ const Story = () => {
 
             {/* Стало */}
             <div className="text-center">
-              <div className="bg-white rounded-2xl shadow-xl overflow-hidden ring-4 ring-rose-300">
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <img src={july1Img} alt="Семья открывает дверь нового дома" className="w-full h-80 object-cover" />
               </div>
-              <p className="mt-4 text-emerald-600 font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
+              <p className="mt-4 text-black font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
                 Стало
               </p>
               <p className="text-zinc-600">Новый безопасный дом, ключ в руках хозяина</p>
@@ -45,7 +45,7 @@ const Story = () => {
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 <img src={july0Img} alt="Команда и семья вместе" className="w-full h-80 object-cover" />
               </div>
-              <p className="mt-4 text-amber-600 font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
+              <p className="mt-4 text-black font-bold text-lg" style={{ fontFamily: "satoshi-bold" }}>
                 Вместе
               </p>
               <p className="text-zinc-600">Радость, улыбки, вера в добро</p>
