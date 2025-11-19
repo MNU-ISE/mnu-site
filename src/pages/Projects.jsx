@@ -141,7 +141,6 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                loading="lazy" 
                 className="w-full h-48 object-cover"
               />
               <div className="p-6 text-left">
