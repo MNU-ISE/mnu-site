@@ -9,11 +9,11 @@ const About = () => {
         
         {/* Левая часть — фото */}
         <div className="flex-shrink-0">
-          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+          <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[30rem] md:h-[30rem]">
             <img
               src={myImg}
               alt="Международная Школа Экономики"
-              className="absolute inset-0 w-full h-full object-cover rounded-full border-8 border-stone-900 shadow-2xl"
+              className="absolute inset-0 w-full h-full object-cover rounded-full border-8 border-stone-900 shadow-2xl p-3"
               loading="eager"
             />
           </div>
